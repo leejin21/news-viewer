@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import React, { useState, useCallback } from "react";
+import { Route } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import NewsPages from "./pages/NewsPages";
+
+const App = () => {
+    return <Route path="/:category?" component={NewsPages}></Route>;
+    // /:category? 와 같이 물음표가 있는 이유는 category 값이 선택적이기 때문
+};
 
 export default App;
