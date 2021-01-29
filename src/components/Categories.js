@@ -36,10 +36,10 @@ const categories = [
 const CategoriesBlock = styled.div`
     display: flex;
     padding: 1rem;
-    width: 768px;
+    width: 82%;
     margin: 0 auto;
     @media screen and (max-width: 768px) {
-        width: 100%;
+        width: 80%;
         overflow-x: auto;
     }
 `;
